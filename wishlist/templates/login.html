@@ -6,13 +6,13 @@
 
 {% block content %}
 
-<div class = "login">
+<div class = "login" style="text-align:center">
 
-    <h1>Login</h1>
+    <h1 style="text-align:center">Login</h1>
 
-    <form method="POST" action="">
+    <form style="text-align:center" method="POST" action="">
         {% csrf_token %}
-        <table>
+        <table style="margin-left:auto;margin-right:auto; margin-top: 25px">
             <tr>
                 <td>Username: </td>
                 <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
@@ -25,7 +25,7 @@
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <td><input class="btn btn-outline-dark" type="submit" value="Login"></td>
             </tr>
         </table>
     </form>
@@ -38,8 +38,7 @@
         </ul>
     {% endif %}     
         
-    Belum mempunyai akun? <a href="{% url 'wishlist:register' %}">Buat Akun</a>
-
+    <p>Belum mempunyai akun? <a href="{% url 'wishlist:register' %}">Buat Akun</a></p>
 </div>
 
 {% endblock content %}
