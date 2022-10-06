@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import render
 from wishlist.models import BarangWishlist
 from django.http import HttpResponse, JsonResponse
